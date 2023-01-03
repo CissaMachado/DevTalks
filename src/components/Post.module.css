@@ -91,7 +91,7 @@
   margin-top: 1rem;
   border-radius: 8px;
   border: 0;
-  background-color: var(--pink-800);
+  background-color: var(--pink-700);
   color: var(--white);
   font-weight: 400;
   cursor: pointer; /*define como o cursor do mouse deve aparecer quando passar por cima do button*/
@@ -103,7 +103,7 @@
 }
 
 .comentForm button[type=submit]:hover {
-  background-color: var(--pink-700);
+  background-color: var(--pink-600);
 }
 .commentList {
   margin-top: 2rem;
