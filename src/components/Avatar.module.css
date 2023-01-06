@@ -1,0 +1,14 @@
+.avatar {
+    /*box-sizing: initial // ele faz com que os atributos border... não ocupem um espaço maior do que do container, nesse caso a img*/
+    /*poderiamos resolver essa questão utilizando o calc no css, dessa maneira ele faz uma conta das altura e ...*/
+    width: 3rem;
+    height: 3rem; 
+    border-radius: 8px; /*Muito raramente é utilizado rem para border radius, em geral, utilizamos essa notação de medida para coisas que podem ser alterada rm função de fatores do usuario*/ 
+}
+.avatarWithBorder {
+    width: calc(3rem  +  12px);
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-500);
+    outline: 2px solid var(--pink-600);
+}

@@ -9,3 +9,11 @@
   align-items: flex-start; /* o flex-start fará com que a nossas div sempre esteja alinhada com o topo, caso não fosse inserido isso a nossa sidbar iria ser forçada a ter o mesmo tamanho do post*/
   
 }
+@media (max-width: 768px){
+  html {
+    font-size: 87.5%;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
