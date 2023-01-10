@@ -1,15 +1,16 @@
 import styles from './Post.module.css';
 import { Comment } from './Comment';
 import { Avatar } from './Avatar';
-export function Post(){
+
+export function Post({ author , publishedAt}){
   return (
     <article className= {styles.post}>
       <header>
         <div className={styles.author}>
-          <Avatar src="https://github.com/leivasgabi.png" />
+          <Avatar src={author.avatarUrl} />
         <div className={styles.authorInfo}>
-          <strong>Cecilia Machado</strong>
-          <span>Web Devoloper</span>
+          <strong>{author.name}</strong>
+          <span>{author.cargo}</span>
         </div>
         </div>
         <time title= "11 de maio a 00:13h" dateTime= "2022-05-11 00:13:30">Foi publicado há 1h</time>
