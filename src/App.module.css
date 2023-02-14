@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: 70rem; /* rem no css vale 16 px, essa altura máxima foi definida a partir do design no figma*/
+  margin: 2rem auto; /* auto seguinifica margin automática*/
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: 256px 1fr; /* a primeira coluna tem um valor fixo e a segunda vai se adaptar, no grid usamos fr como unidade de medida para valores adaptaveis*/
+  gap: 2rem;
+  align-items: flex-start; /* o flex-start fará com que a nossas div sempre esteja alinhada com o topo, caso não fosse inserido isso a nossa sidbar iria ser forçada a ter o mesmo tamanho do post*/
+  
+}
+@media (max-width: 768px){
+  html {
+    font-size: 87.5%;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
